@@ -1,0 +1,29 @@
+{
+  "name": "practitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "ts-node src/index.ts && tsc --declaration",
+    "test": " ts-mocha --timeout 1000000 ./src/test/**/*.spec.ts "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "chalk": "^4.1.0",
+    "mocha": "^10.1.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
